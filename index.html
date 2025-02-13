@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<!-- Entête commun
+   ================================================== -->
+<html lang="fr-ca">
+   <head>
+      <!-- Basic Page Needs
+         ================================================== -->
+      <meta charset="UTF-8">
+      
+
+      <!--DCMI métadonnées-->
+      <meta name="DC.title" content="Travail pratique &#35;3 site web du film" />
+      <meta name="DC.creator" content="Zhang, Yifei" />
+      <meta name="DC.subject" content="Javascript, JSON, DOM, shopping-cart, etc+ " />
+      <meta name="DC.description" content="TP3 du cours IFTT-1142-Udem, travailler avec le JavaScript pour animer une page Web simple+ " />
+      <meta name="DC.date" content="2017-11-20" />
+      <meta name="DC.type" content="text" />
+      <meta name="DC.format" content="text/html" />
+      <meta name="DC.identifier" content="www.gin-ebsi.umontreal.ca/p1033409/IFT1142/TP3/index.html" />
+      <meta name="DC.language" content="fr" />
+      <meta name="DC.relation" 
+         content="https://studium.umontreal.ca/pluginfile.php/3320605/mod_resource/content/13/tp2.pdf" />
+      
+	  
+      <!--Fin de DCMI métadonnées-->
+      <title>IFT1142-TP3-JZ8 Films inc</title>
+      <!-- CSS externe
+         ================================================== -->
+        <script language="javascript" src="./js/listfilms.js"></script>
+        <script language="javascript" src="./js/nouveautes.js"></script>
+        <script language="javascript" src="./js/films.js"></script>
+        <script language="javascript" src="./js/panier.js"></script>
+		<script src="https://smtpjs.com/v2/smtp.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
+	  <link rel="stylesheet" type="text/css" href="./css/print.css" media="print" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+
+      </style>
+   </head>
+   <body onload="nouveauFilm()">
+      <header>
+         
+		 
+		 <!--Logo-->
+		<span style="float:left;">
+		<a href="index.html"  onClick="nouveauFilm()">
+		<img src="./images/logo.png" alt="Logo de JZ8 FILMS Inc" id="imgLogo" />
+		</a>
+		</span>
+		
+		<span style="float:right; ">
+		   <h1>  LE PLUS BRILLANT SITE WEB DU FILM !   </h1>
+		</span>		
+
+		<!--Fin de --Logo-->
+				 
+		 <!--menu nav-->
+ <nav>
+   <a href="index.html#nouveauFilm" onClick="nouveauFilm()">Accueil</a>
+   
+   <a href="index.html#catalogue" onClick="catelogue(1)" >Catalogue</a>
+
+   <div class="dropdown">
+      <button class="dropbtn">Categories 
+      <i class="fa fa-caret-down"></i>
+      </button>    
+         <select class="dropdown-content" id="selCtgr" name="selCtgr" size=11 onchange="catagories();">
+            <option>Action</option>
+            <option>Animation‎</option>
+            <option>Catastrophe‎</option>
+            <option>Comedie</option>
+            <option>Espionnage‎‎</option>
+            <option>Guerre‎‎</option>
+            <option>Horreur‎‎</option>
+            <option>Musique</option>
+            <option>Romantique‎</option>
+            <option>Science-fiction‎‎</option>
+            <option>Autres‎</option>
+         </select>
+       </div>
+   <a  href="index.html#panier" onClick="panierAfficher();" style="float:left" > 
+   <i class="fa fa-shopping-cart"></i>Panier </a>
+   
+   <a  href="index.html#contact" onClick="payerInfo();" style="float:left" >
+   <i class="fa fa-address-card"></i>Contact </a>
+   <div style="color:#23ba5d;font-size:18px;text-shadow: 0px 0px 2px #FF0000;text-align:right" class="clock"></div>
+
+
+</nav>
+<!--Fin de menu nav-->
+
+      </header>
+      <main>
+         
+          
+          <div id ="nouveauFilm"></div>
+          <div id ="catelogue"></div>
+          <div id ="catagories"></div>
+          <div id ="panier"></div>
+          <div id ="contact"></div>
+		  <div id ="facture"></div>
+          
+
+      </main>
+      <footer> 
+        <hr style="clear: both;">
+<p style="text-align:center;font-size:18px;color:#23ba5d">
+   <i class="fa fa-film" aria-hidden="true"></i>&#160;Tous droits r&eacute;serv&eacute;s  &#160;&#160;&copy;     2017 <a  href="#contact">
+   <img src="./images/logo.png" alt="Logo de JZ8 FILMS Inc" style="width:150px; height:20px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);" />
+   </a>  &#160;&#160;&#160;Réalisation par <a href="mailto:yifei.zhang@umontreal.ca">Yifei Zhang</a>
+   
+</p>
+
+
+      </footer>
+   </body>
+   <!-- Fin de Body
+      ================================================== -->
+</html>
+

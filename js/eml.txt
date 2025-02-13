@@ -1,0 +1,15 @@
+
+    Outgoing Mail (SMTP) Server: smtp.gmail.com
+    Use Authentication: Yes
+    Use Secure Connection: Yes (TLS or SSL depending on your mail client/website SMTP plugin)
+    Username: your Gmail account (e.g. user@gmail.com)
+    Password: your Gmail password
+    Port: 465 (SSL required) or 587 (TLS required)
+	
+	
+Your security token is 9a41465a-3d47-4e50-bf6f-4f664e930d2e
+
+jz8films@gmail.com
+jz8@films
+
+02a1d170-ce93-4a09-891a-63bc9bc7b9d5
